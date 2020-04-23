@@ -87,7 +87,27 @@ namespace ConsoleApp2
         public void exponencialis()
         {
             t = Math.Abs(Math.Log(1 - ft) / lambda);
-            Console.WriteLine("Valószínűség: " + t);
+            Console.WriteLine("Üzemóra: " + t);
+        }
+    }
+    class ReverseCombo
+    {
+        private double lambda;
+        private double ex;
+        private double ft;
+        private double t;
+
+        public ReverseCombo(double _t, double p)
+        {
+            ft = p;
+            t = _t;
+        }
+
+        public void exponencialis()
+        {
+            lambda = Math.Abs(Math.Log(1 - ft) / t);
+            ex = 1 / lambda;
+            Console.WriteLine("Várható érték: " + ex);
         }
     }
 }
