@@ -8,7 +8,7 @@ namespace ConsoleApp2
         {
             Combo v = new Combo(5000, 7500, 2500);
             v.exponencialis();
-            Console.ReadKey();
+            Console.ReadKey(); 
         }
     }
 }
