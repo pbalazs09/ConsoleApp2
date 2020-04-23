@@ -6,7 +6,7 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            Combo v = new Combo(5000, 7500, 2500);
+            Reverse v = new Reverse(5000, 0.5);
             v.exponencialis();
             Console.ReadKey(); 
         }

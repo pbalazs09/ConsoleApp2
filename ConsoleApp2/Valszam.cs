@@ -68,4 +68,26 @@ namespace ConsoleApp2
             Console.WriteLine("Valószínűség: " + (ft1 - ft2));
         }
     }
+
+    class Reverse
+    {
+        private double lambda;
+        private double ex;
+        private double ft;
+        private double t;
+
+        public Reverse(double _ex, double p)
+        {
+            ft = p;
+            ex = _ex;
+            lambda = 1 / _ex;
+
+        }
+
+        public void exponencialis()
+        {
+            t = Math.Abs(Math.Log(1 - ft) / lambda);
+            Console.WriteLine("Valószínűség: " + t);
+        }
+    }
 }
